@@ -18,7 +18,7 @@
       notification.innerHTML = `
         <img src="https://w7.pngwing.com/pngs/608/935/png-transparent-push-button-computer-icons-youtube-play-button-play-angle-text-trademark-thumbnail.png" alt="Play Button Icon">
         <div>
-          <strong><span id="viewer-count">${initialCount}</span> people are watching this video <span class="live-now">Live now</span></strong>
+          <strong><span id="viewer-count">${initialCount}</span> people are watching this video <span class="live-now">Watch now</span></strong>
         </div>
       `;
       // Adiciona a classe para exibir com transição suave
