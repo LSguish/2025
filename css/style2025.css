@@ -43,7 +43,7 @@ body {
     color: #333;
     margin-bottom: 15px;
   }
-.no-wrap {
+  .no-wrap {
     white-space: nowrap;
   }
   .popup img {
