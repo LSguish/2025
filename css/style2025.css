@@ -82,6 +82,7 @@ body {
 .popup p.tsl {
   font-size: 14px;
   color: #0088D9;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 .popup p.tsl:hover {
