@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Imagem de fundo com desfoque */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/42nxUjhdNFGq.webp') no-repeat center center;
+    background-size: cover; /* Mantém proporção e preenche a tela */
+    background-position: top center; /* Prioriza o topo da imagem */
+    filter: blur(4px); /* Aplica o desfoque */
+    z-index: -1; /* Fica atrás do conteúdo */
+  }
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Garante que o conteúdo fique acima do background */
+  }
+  .popup {
+    background-color: rgba(212, 212, 212, 1.0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .popup h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  .popup img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .popup p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .popup a {
+    text-decoration: none;
+  }
+  .popup p.tsl {
+    font-size: 15px;
+    color: #0088D9;
+    margin-bottom: 20px;
+  }
+  .popup p.tsl:hover {
+    text-decoration: underline;
+  }
+  .button-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF5733;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button-link:hover {
+    background-color: #CE2121; 
+    transition: background-color 0.3s ease;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    z-index: 1;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer p {
+    margin-top: 10px;
+  }
+
+  /* Media Query para telas menores */
+  @media (max-width: 480px) {
+    .popup h1 {
+      font-size: 20px;
+    }
+    .popup p {
+      font-size: 14px;
+    }
+    .button-link {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    footer {
+      font-size: 10px;
+    }
+  }
