@@ -80,7 +80,7 @@ body {
 
 /* Texto do link extra */
 .popup p.tsl {
-  font-size: 15px;
+  font-size: 14px;
   color: #0088D9;
   margin-bottom: 20px;
 }
@@ -166,10 +166,6 @@ footer p {
   .popup p {
       font-size: 14px;
       margin-bottom: 15px;
-  }
-  .button-link {
-      font-size: 12px;
-      padding: 8px 16px;
   }
   footer {
       padding: 12px 0;
