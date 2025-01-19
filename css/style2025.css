@@ -20,6 +20,8 @@ body {
   height: 100%;
   background: url('/images/42nxUjhdNFGq.webp') no-repeat center center;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); /* Camada de escurecimento (preto com 50% de opacidade) */
+  background-blend-mode: darken; /* Mistura a cor com a imagem */
   filter: blur(4px);
   z-index: -1;
 }
@@ -112,6 +114,8 @@ footer {
   color: #fff;
   padding: 10px 0;
   background-color: rgba(1, 1, 1, 0.8);
+  background-blend-mode: darken;
+  filter: blur(2px);
 }
 footer a {
   color: #fff;
